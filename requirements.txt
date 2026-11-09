@@ -1,0 +1,4 @@
+# Faz 1-2'de genişletilecek
+pyyaml
+pandas
+pypdf

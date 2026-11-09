@@ -1,0 +1,14 @@
+# K0 — Çıplak LLM taban çizgisi
+name: K0_bare_llm
+retrieval:
+  enabled: false
+safety:
+  enabled: false
+generator:
+  provider: cloud        # cloud | local
+  model: "<sabitlenecek-model-surumu>"
+  temperature: 0
+  system_prompt_file: configs/prompts/base_tr.md
+eval:
+  datasets: [s_ana, s_tuz]
+  repeats: 3

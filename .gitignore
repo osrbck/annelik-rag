@@ -1,0 +1,8 @@
+kb/raw/
+eval/results/raw/
+*.env
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+app/mobile/build/
