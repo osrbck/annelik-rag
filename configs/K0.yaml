@@ -1,14 +1,25 @@
 # K0 — Çıplak LLM taban çizgisi
+# Değerlendirme kuralları: docs/thesis/degerlendirme_protokolu.md
 name: K0_bare_llm
+protocol_version: "1.0"
 retrieval:
   enabled: false
 safety:
   enabled: false
 generator:
   provider: cloud        # cloud | local
+  # Takma ad değil, sağlayıcının tarihli sürüm kimliği yazılacak (protokol §7.2).
+  # Yer tutucu duruyorken koşturucu çalışmayı reddetmelidir.
   model: "<sabitlenecek-model-surumu>"
-  temperature: 0
+  temperature: 0         # sağlayıcı desteklemiyorsa fiilî değer koşum kaydına yazılır
+  seed: 20261112         # destekleniyorsa
+  max_output_tokens: null   # dev üzerinde seçilip K0–K4'te aynı değerle sabitlenecek (protokol §12, karar 6)
   system_prompt_file: configs/prompts/base_tr.md
+input:
+  # Profil bütün konfigürasyonlarda kullanıcı mesajına aynı biçimde eklenir (protokol §2).
+  profile_in_prompt: true
 eval:
-  datasets: [s_ana, s_tuz]
+  # Her konfigürasyon dört setin tamamında koşturulur; K0'da getirme ölçütleri "uygulanamaz"dır.
+  datasets: [s_ana, s_yas, s_tuz, s_adv]
+  split: dev             # test yalnız nihai koşumda, --nihai ile (protokol §7)
   repeats: 3
