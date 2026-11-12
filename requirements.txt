@@ -1,4 +1,6 @@
-# Faz 1-2'de genişletilecek
-pyyaml
-pandas
-pypdf
+# Faz 1-2'de genişletilecek. Sürümler sabittir: koşumların yeniden üretilebilmesi için
+# yükseltme bilinçli yapılır. (scripts/ altındaki betikler yalnız standart kütüphaneyi kullanır.)
+# Python >= 3.11
+pyyaml==6.0.3
+pandas==3.1.1
+pypdf==7.0.1
