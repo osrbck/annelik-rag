@@ -10,7 +10,7 @@ mobil asistanın **yaş-farkında, modüler RAG çekirdeği** ve **deterministik
 | `kb/raw/` | Orijinal rehber PDF'leri (git'e girmez, `.gitignore`) | 0 |
 | `kb/registry/` | Belge kayıt defteri: kaynak, sürüm, lisans, yaş kapsamı | 0 |
 | `kb/processed/` | Parçalanmış + yaş etiketli metin (JSONL) | 2–3 |
-| `eval/datasets/` | S-ANA, S-YAS, S-TUZ, S-ADV setleri (`dev.jsonl`, `test.jsonl`) | 1–3 |
+| `eval/datasets/` | S-ANA, S-YAS, S-TUZ, S-ADV setleri (`dev.jsonl`, `test.jsonl`) ve yazım yönergesi | 1–3 |
 | `eval/runner/` | Konfigürasyon-bağımsız değerlendirme koşturucusu | 1 |
 | `eval/judge/` | Hakem model istemi ve kural tabanlı tarama | 1 |
 | `eval/results/` | Tarih damgalı ham çıktılar ve metrik tabloları | 1+ |
@@ -47,4 +47,5 @@ Hipotezler, veri seti tanımları, ölçütler, puanlama ve istatistik [docs/the
 - Dondurmadan sonraki her değişiklik `docs/thesis/sapma_gunlugu.md` dosyasına yazılır.
 - Geliştirme yalnız `dev.jsonl` ile yapılır; `test.jsonl` bütün konfigürasyonlar dondurulduktan sonra **bir kez** koşturulur. `dev` ayrı yazılır, test setinden bölünmez (protokol §4).
 - S-TUZ ve S-ADV test bölmeleri, güvenlik katmanı (Faz 4) yazılmadan önce dondurulur.
+- **Geliştirici körlüğü:** sistemi geliştiren kişi ve oturumlar `eval/datasets/*/test.jsonl` dosyalarını açmaz; test maddeleriyle yalnız yazar ajan çalışır (protokol §4.6). Doğrulama: `python3 -m eval.runner dogrula`.
 - Gerçek anne-çocuk verisi hiçbir zaman depoya girmez; tüm profiller sentetiktir.

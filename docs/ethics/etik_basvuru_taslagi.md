@@ -1,6 +1,6 @@
 # Etik Kurul Başvuru Taslağı (Mersin Üniversitesi)
 
-> Taslak — danışman onayından sonra enstitünün resmi formuna aktarılacak.
+> Taslak — **askıda (2026-11-12):** başvuru tez dönemine ertelendi. O zaman danışman onayıyla resmi forma aktarılacak.
 
 ## 1. Araştırmanın adı
 Gebelik ve 0–18 yaş çocuk sağlığı alanında yaş-farkında, güvenlik katmanlı RAG tabanlı bir soru-cevap asistanının geliştirilmesi ve değerlendirilmesi
@@ -14,10 +14,10 @@ Kamuya açık klinik rehberlere dayanan bir yapay zekâ asistanının; (a) yaşa
 ## 4. Veri kaynakları
 - Kamuya açık rehberler (Sağlık Bakanlığı, WHO, uzmanlık dernekleri) — kişisel veri içermez.
 - **Sentetik** anne/çocuk profilleri ve soru setleri — araştırmacı tarafından üretilir, gerçek kişiye ait değildir.
-- Uzman değerlendirme puanları — kodlanmış (U1, U2, U3); yalnız puan ve kısa gerekçe. Kod–kimlik eşlemesi yalnız araştırmacıda durur, depoya ve yayınlara girmez.
+- Uzman değerlendirme puanları — takma adlı (U1, U2, U3); yalnız puan, kısa gerekçe ve oturum süresi. Süre ve uzmanlar arası uyum yalnız toplu raporlanır; 2–3 kişilik panelde veri "anonim" sayılmaz. Kod–kimlik eşlemesi yalnız araştırmacıda durur, depoya ve yayınlara girmez.
 
 ## 5. Katılımcılar
-Uzman paneli: 2–3 hekim/ebe, gönüllü. Yük: kişi başı en çok 6 saat, üç çevrim içi oturuma bölünmüş (yaklaşık 20 dk, 2 saat, 3 saat). Kimlik bilgisi yayımlanmaz; isteğe bağlı teşekkür.
+Uzman paneli: 2–3 hekim/ebe, gönüllü. Yük: kişi başı yaklaşık 3 saat 30 dakika, üç çevrim içi oturuma bölünmüş (yaklaşık 30 dk, 2 saat, 1 saat). Kimlik bilgisi yayımlanmaz; isteğe bağlı teşekkür.
 
 ## 6. Riskler ve önlemler
 - Hasta katılımcı yoktur. Uzman katılımcılar için risk asgari düzeydedir (zaman yükü); puanladıkları yanıtlar hiçbir hastaya sunulmamış araştırma çıktılarıdır.

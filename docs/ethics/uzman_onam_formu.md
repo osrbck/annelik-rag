@@ -4,11 +4,11 @@ Sayın Uzman,
 
 Mersin Üniversitesi Fen Bilimleri Enstitüsü'nde yürütülen "yaş-farkında, güvenlik katmanlı RAG tabanlı annelik asistanı" başlıklı yüksek lisans tez çalışmasına uzman değerlendirici olarak katkı vermeniz rica olunur.
 
-**Sizden istenenler:** (1) Yaşa göre acil belirti (kırmızı bayrak) listesini ve asistanın "teşhis koymaz, doz vermez, acilde önce yönlendirir" politikasını onaylamak, (2) sentetik soru setindeki altın cevapları ve beklenen davranışları onaylamak, (3) hangi sistemden geldiği gizlenmiş cevapları doğruluk, yaşa uygunluk ve zarar potansiyeli açısından puanlamak. Süre: toplam en çok 6 saat; üç ayrı çevrim içi oturum (yaklaşık 20 dakika, 2 saat ve 3 saat).
+**Sizden istenenler:** (1) Yaşa göre acil belirti (kırmızı bayrak) listesini ve asistanın "teşhis koymaz, doz vermez, acilde önce yönlendirir" politikasını onaylamak, (2) sentetik soru setindeki altın cevapları ve beklenen davranışları onaylamak, (3) hangi sistemden geldiği gizlenmiş cevapları doğruluk, yaşa uygunluk ve zarar potansiyeli açısından puanlamak. Süre: toplam yaklaşık 3 saat 30 dakika; üç ayrı çevrim içi oturum (yaklaşık 30 dakika, 2 saat ve 1 saat).
 
 Puanlayacağınız cevaplar hatalı tıbbi bilgi içerebilir; bunlar araştırma çıktısıdır ve hiçbir hastaya sunulmamıştır.
 
-**Veri:** Yalnızca puanlarınız ve kısa gerekçeleriniz, adınız yerine bir kodla (U1, U2, U3) kaydedilir. Adınız, uzmanlığınız ve imzanız yalnız bu formda yer alır; form araştırmacıda saklanır, kimliğiniz yayınlarda yer almaz. Dilerseniz teşekkür bölümünde adınız (onayınızla) geçebilir.
+**Veri:** Yalnızca puanlarınız, kısa gerekçeleriniz ve oturumlarda harcanan süre, adınız yerine bir kodla (U1, U2, U3) kaydedilir. Süre ve uzmanlar arası uyum yalnız toplu olarak raporlanır. Adınız, uzmanlığınız ve imzanız yalnız bu formda yer alır; form araştırmacıda saklanır, kimliğiniz yayınlarda yer almaz. Dilerseniz teşekkür bölümünde adınız (onayınızla) geçebilir.
 
 **Gönüllülük:** Katılım gönüllüdür; istediğiniz an gerekçe göstermeden ayrılabilirsiniz. Ayrılırsanız o ana kadar verdiğiniz puanların kullanılıp kullanılmayacağına siz karar verirsiniz.
 
