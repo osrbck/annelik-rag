@@ -1,0 +1,44 @@
+{
+  "project": {
+    "agentack": "2.1",
+    "architecture": {
+      "kind": "monolith",
+      "confidence": "low",
+      "why": [
+        "no application manifest recognised"
+      ]
+    },
+    "units": [],
+    "unclaimed": [],
+    "contracts": {
+      "kinds": [],
+      "root": null,
+      "roots": [],
+      "per_module": false,
+      "files": 0,
+      "tools": [],
+      "check": null
+    },
+    "commands": {},
+    "data": {
+      "migrations": []
+    },
+    "boundaries": [],
+    "monorepo": null,
+    "e2e": null,
+    "guide": []
+  },
+  "project_override": {
+    "architecture": "monolith",
+    "units": {
+      "eval": {
+        "path": "eval",
+        "layer": "backend",
+        "stack": "python",
+        "commands": {
+          "test": "python3 -m unittest discover -s tests -v"
+        }
+      }
+    }
+  }
+}
