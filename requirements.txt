@@ -1,6 +1,9 @@
 # Faz 1-2'de genişletilecek. Sürümler sabittir: koşumların yeniden üretilebilmesi için
-# yükseltme bilinçli yapılır. (scripts/ altındaki betikler yalnız standart kütüphaneyi kullanır.)
+# yükseltme bilinçli yapılır. (scripts/ altındaki betikler yalnız standart kütüphaneyi kullanır;
+# tek istisna pypdf isteyen scripts/onar_metin_katmani.py'dir.)
 # Python >= 3.11
 pyyaml==6.0.3
 pandas==3.1.1
 pypdf==7.0.1
+# Üretici ve hakem çağrıları (eval/runner/uretici.py). 2026-11-13 kurulumunda sabitlendi.
+anthropic==1.17.0
