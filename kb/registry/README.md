@@ -11,6 +11,13 @@ Her belge (ya da belge grubu) için `belge_kayit_defteri.csv`'de bir satır. Kur
    birden çok dosya ise `kb/raw/<belge_id>/` klasörü (dernek rehberleri, WHO tabloları gibi
    `çeşitli` kayıtlar). Web sayfası kaynakları (ör. aşı takvimi) erişim tarihindeki hâliyle
    PDF/HTML olarak kaydedilir; canlı sayfa kaynak sayılmaz.
+   İndirilen her dosyanın tam adresi, boyutu ve kendi SHA-256'sı `kaynak_dosyalari.csv`'de
+   tutulur (`kb/raw/` depoya girmediği için klasör kayıtlarının hangi adreslerden geldiği
+   yalnız buradan izlenebilir). Dosya eklenir ya da yenilenirse bu döküm de güncellenir.
+   **Onarılmış kopyalar:** metin katmanı bozuk bir PDF'in ham dosyasına dokunulmaz. Onarılmış
+   kopya `scripts/onar_metin_katmani.py` ile `kb/raw/_onarilmis/` altına üretilir (aynı girdiden
+   hep aynı dosya çıkar); hangi belgenin onarılmış kopyadan okunacağı o belgenin `notlar`
+   sütununda yazar. Bu klasör bir kayıt değildir, hash denetimine girmez.
 3. **Yaş kapsamı** zorunlu: Faz 3'teki yaş-farkında filtre bu alanı kullanır. Bu sütun insan
    okuması içindir; filtrenin kullanacağı makinece okunur aralıklar bölüm düzeyinde
    `bolum_yas_haritasi.csv` dosyasında tutulur.
