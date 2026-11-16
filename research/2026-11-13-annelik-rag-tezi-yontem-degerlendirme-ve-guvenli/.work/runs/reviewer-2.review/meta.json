@@ -1,0 +1,94 @@
+{
+  "agent": "reviewer-2",
+  "stage": "review",
+  "role": "reviewer",
+  "out": "/home/osman/Desktop/annelik-rag/research/2026-11-13-annelik-rag-tezi-yontem-degerlendirme-ve-guvenli/reviews/reviewer-2.md",
+  "chain": [
+    {
+      "provider": "claude",
+      "tier": "top",
+      "model": "fable",
+      "effort": "high",
+      "vendor": "anthropic"
+    },
+    {
+      "provider": "agy",
+      "tier": "top",
+      "model": "gemini-4-argon-high",
+      "effort": null,
+      "vendor": "google"
+    },
+    {
+      "provider": "kiro",
+      "tier": "top",
+      "model": "claude-opus-5.5",
+      "effort": null,
+      "vendor": "anthropic"
+    },
+    {
+      "provider": "claude",
+      "tier": "deep",
+      "model": "opus",
+      "effort": null,
+      "vendor": "anthropic",
+      "wanted": "top"
+    },
+    {
+      "provider": "agy",
+      "tier": "deep",
+      "model": "gemini-4-argon-medium",
+      "effort": null,
+      "vendor": "google",
+      "wanted": "top"
+    },
+    {
+      "provider": "claude",
+      "tier": "fast",
+      "model": "sonnet",
+      "effort": null,
+      "vendor": "anthropic",
+      "wanted": "top"
+    },
+    {
+      "provider": "codex",
+      "tier": "fast",
+      "model": "gpt-5.6-terra",
+      "effort": "medium",
+      "vendor": "openai",
+      "wanted": "top"
+    },
+    {
+      "provider": "agy",
+      "tier": "fast",
+      "model": "gemini-3.8-flash-high",
+      "effort": null,
+      "vendor": "google",
+      "wanted": "top"
+    },
+    {
+      "provider": "kiro",
+      "tier": "fast",
+      "model": "claude-sonnet-5.5",
+      "effort": null,
+      "vendor": "anthropic",
+      "wanted": "top"
+    }
+  ],
+  "timeout_minutes": 40,
+  "created": "2026-11-13T14:41:17+03:00",
+  "since": 1794570077.537087,
+  "status": "done",
+  "attempts": [
+    {
+      "provider": "claude",
+      "model": "fable",
+      "outcome": "done"
+    }
+  ],
+  "provider": "claude",
+  "model": "fable",
+  "effort": "high",
+  "tier": "top",
+  "finished": "2026-11-13T14:45:19+03:00",
+  "minutes": 4.0
+}

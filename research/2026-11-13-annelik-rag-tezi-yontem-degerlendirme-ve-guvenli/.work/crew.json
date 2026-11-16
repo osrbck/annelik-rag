@@ -1,0 +1,787 @@
+{
+  "version": "0.1.0",
+  "topic": "Annelik RAG tezi: yontem, degerlendirme ve guvenlik taramasi",
+  "degree": "hard",
+  "settings": {
+    "researchers": 3,
+    "reviewers": 1,
+    "panel": 1,
+    "tier": "top",
+    "writer": "top",
+    "words": 1800,
+    "calls": 16,
+    "cycles": 3
+  },
+  "language": null,
+  "timeouts": {
+    "fast": 15,
+    "deep": 25,
+    "top": 40
+  },
+  "project": {},
+  "link_check": true,
+  "earlier": null,
+  "agents": [
+    {
+      "agent": "researcher-1",
+      "role": "researcher",
+      "cycle": 1,
+      "chain": [
+        {
+          "provider": "claude",
+          "tier": "top",
+          "model": "fable",
+          "effort": "high",
+          "vendor": "anthropic"
+        },
+        {
+          "provider": "agy",
+          "tier": "top",
+          "model": "gemini-4-argon-high",
+          "effort": null,
+          "vendor": "google"
+        },
+        {
+          "provider": "kiro",
+          "tier": "top",
+          "model": "claude-opus-5.5",
+          "effort": null,
+          "vendor": "anthropic"
+        },
+        {
+          "provider": "claude",
+          "tier": "deep",
+          "model": "opus",
+          "effort": null,
+          "vendor": "anthropic",
+          "wanted": "top"
+        },
+        {
+          "provider": "agy",
+          "tier": "deep",
+          "model": "gemini-4-argon-medium",
+          "effort": null,
+          "vendor": "google",
+          "wanted": "top"
+        },
+        {
+          "provider": "claude",
+          "tier": "fast",
+          "model": "sonnet",
+          "effort": null,
+          "vendor": "anthropic",
+          "wanted": "top"
+        },
+        {
+          "provider": "codex",
+          "tier": "fast",
+          "model": "gpt-5.6-terra",
+          "effort": "medium",
+          "vendor": "openai",
+          "wanted": "top"
+        },
+        {
+          "provider": "agy",
+          "tier": "fast",
+          "model": "gemini-3.8-flash-high",
+          "effort": null,
+          "vendor": "google",
+          "wanted": "top"
+        },
+        {
+          "provider": "kiro",
+          "tier": "fast",
+          "model": "claude-sonnet-5.5",
+          "effort": null,
+          "vendor": "anthropic",
+          "wanted": "top"
+        }
+      ]
+    },
+    {
+      "agent": "researcher-2",
+      "role": "researcher",
+      "cycle": 1,
+      "chain": [
+        {
+          "provider": "agy",
+          "tier": "top",
+          "model": "gemini-4-argon-high",
+          "effort": null,
+          "vendor": "google"
+        },
+        {
+          "provider": "claude",
+          "tier": "top",
+          "model": "fable",
+          "effort": "high",
+          "vendor": "anthropic"
+        },
+        {
+          "provider": "kiro",
+          "tier": "top",
+          "model": "claude-opus-5.5",
+          "effort": null,
+          "vendor": "anthropic"
+        },
+        {
+          "provider": "claude",
+          "tier": "deep",
+          "model": "opus",
+          "effort": null,
+          "vendor": "anthropic",
+          "wanted": "top"
+        },
+        {
+          "provider": "agy",
+          "tier": "deep",
+          "model": "gemini-4-argon-medium",
+          "effort": null,
+          "vendor": "google",
+          "wanted": "top"
+        },
+        {
+          "provider": "claude",
+          "tier": "fast",
+          "model": "sonnet",
+          "effort": null,
+          "vendor": "anthropic",
+          "wanted": "top"
+        },
+        {
+          "provider": "codex",
+          "tier": "fast",
+          "model": "gpt-5.6-terra",
+          "effort": "medium",
+          "vendor": "openai",
+          "wanted": "top"
+        },
+        {
+          "provider": "agy",
+          "tier": "fast",
+          "model": "gemini-3.8-flash-high",
+          "effort": null,
+          "vendor": "google",
+          "wanted": "top"
+        },
+        {
+          "provider": "kiro",
+          "tier": "fast",
+          "model": "claude-sonnet-5.5",
+          "effort": null,
+          "vendor": "anthropic",
+          "wanted": "top"
+        }
+      ]
+    },
+    {
+      "agent": "researcher-3",
+      "role": "researcher",
+      "cycle": 1,
+      "chain": [
+        {
+          "provider": "kiro",
+          "tier": "top",
+          "model": "claude-opus-5.5",
+          "effort": null,
+          "vendor": "anthropic"
+        },
+        {
+          "provider": "claude",
+          "tier": "top",
+          "model": "fable",
+          "effort": "high",
+          "vendor": "anthropic"
+        },
+        {
+          "provider": "agy",
+          "tier": "top",
+          "model": "gemini-4-argon-high",
+          "effort": null,
+          "vendor": "google"
+        },
+        {
+          "provider": "claude",
+          "tier": "deep",
+          "model": "opus",
+          "effort": null,
+          "vendor": "anthropic",
+          "wanted": "top"
+        },
+        {
+          "provider": "agy",
+          "tier": "deep",
+          "model": "gemini-4-argon-medium",
+          "effort": null,
+          "vendor": "google",
+          "wanted": "top"
+        },
+        {
+          "provider": "claude",
+          "tier": "fast",
+          "model": "sonnet",
+          "effort": null,
+          "vendor": "anthropic",
+          "wanted": "top"
+        },
+        {
+          "provider": "codex",
+          "tier": "fast",
+          "model": "gpt-5.6-terra",
+          "effort": "medium",
+          "vendor": "openai",
+          "wanted": "top"
+        },
+        {
+          "provider": "agy",
+          "tier": "fast",
+          "model": "gemini-3.8-flash-high",
+          "effort": null,
+          "vendor": "google",
+          "wanted": "top"
+        },
+        {
+          "provider": "kiro",
+          "tier": "fast",
+          "model": "claude-sonnet-5.5",
+          "effort": null,
+          "vendor": "anthropic",
+          "wanted": "top"
+        }
+      ]
+    },
+    {
+      "agent": "researcher-4",
+      "role": "researcher",
+      "cycle": 1,
+      "chain": [
+        {
+          "provider": "claude",
+          "tier": "top",
+          "model": "fable",
+          "effort": "high",
+          "vendor": "anthropic"
+        },
+        {
+          "provider": "agy",
+          "tier": "top",
+          "model": "gemini-4-argon-high",
+          "effort": null,
+          "vendor": "google"
+        },
+        {
+          "provider": "kiro",
+          "tier": "top",
+          "model": "claude-opus-5.5",
+          "effort": null,
+          "vendor": "anthropic"
+        },
+        {
+          "provider": "claude",
+          "tier": "deep",
+          "model": "opus",
+          "effort": null,
+          "vendor": "anthropic",
+          "wanted": "top"
+        },
+        {
+          "provider": "agy",
+          "tier": "deep",
+          "model": "gemini-4-argon-medium",
+          "effort": null,
+          "vendor": "google",
+          "wanted": "top"
+        },
+        {
+          "provider": "claude",
+          "tier": "fast",
+          "model": "sonnet",
+          "effort": null,
+          "vendor": "anthropic",
+          "wanted": "top"
+        },
+        {
+          "provider": "codex",
+          "tier": "fast",
+          "model": "gpt-5.6-terra",
+          "effort": "medium",
+          "vendor": "openai",
+          "wanted": "top"
+        },
+        {
+          "provider": "agy",
+          "tier": "fast",
+          "model": "gemini-3.8-flash-high",
+          "effort": null,
+          "vendor": "google",
+          "wanted": "top"
+        },
+        {
+          "provider": "kiro",
+          "tier": "fast",
+          "model": "claude-sonnet-5.5",
+          "effort": null,
+          "vendor": "anthropic",
+          "wanted": "top"
+        }
+      ]
+    },
+    {
+      "agent": "reviewer-1",
+      "role": "reviewer",
+      "cycle": 1,
+      "chain": [
+        {
+          "provider": "claude",
+          "tier": "top",
+          "model": "fable",
+          "effort": "high",
+          "vendor": "anthropic"
+        },
+        {
+          "provider": "agy",
+          "tier": "top",
+          "model": "gemini-4-argon-high",
+          "effort": null,
+          "vendor": "google"
+        },
+        {
+          "provider": "kiro",
+          "tier": "top",
+          "model": "claude-opus-5.5",
+          "effort": null,
+          "vendor": "anthropic"
+        },
+        {
+          "provider": "claude",
+          "tier": "deep",
+          "model": "opus",
+          "effort": null,
+          "vendor": "anthropic",
+          "wanted": "top"
+        },
+        {
+          "provider": "agy",
+          "tier": "deep",
+          "model": "gemini-4-argon-medium",
+          "effort": null,
+          "vendor": "google",
+          "wanted": "top"
+        },
+        {
+          "provider": "claude",
+          "tier": "fast",
+          "model": "sonnet",
+          "effort": null,
+          "vendor": "anthropic",
+          "wanted": "top"
+        },
+        {
+          "provider": "codex",
+          "tier": "fast",
+          "model": "gpt-5.6-terra",
+          "effort": "medium",
+          "vendor": "openai",
+          "wanted": "top"
+        },
+        {
+          "provider": "agy",
+          "tier": "fast",
+          "model": "gemini-3.8-flash-high",
+          "effort": null,
+          "vendor": "google",
+          "wanted": "top"
+        },
+        {
+          "provider": "kiro",
+          "tier": "fast",
+          "model": "claude-sonnet-5.5",
+          "effort": null,
+          "vendor": "anthropic",
+          "wanted": "top"
+        }
+      ]
+    },
+    {
+      "agent": "panel-1",
+      "role": "reviewer",
+      "cycle": 1,
+      "chain": [
+        {
+          "provider": "agy",
+          "tier": "top",
+          "model": "gemini-4-argon-high",
+          "effort": null,
+          "vendor": "google"
+        },
+        {
+          "provider": "claude",
+          "tier": "top",
+          "model": "fable",
+          "effort": "high",
+          "vendor": "anthropic"
+        },
+        {
+          "provider": "kiro",
+          "tier": "top",
+          "model": "claude-opus-5.5",
+          "effort": null,
+          "vendor": "anthropic"
+        },
+        {
+          "provider": "claude",
+          "tier": "deep",
+          "model": "opus",
+          "effort": null,
+          "vendor": "anthropic",
+          "wanted": "top"
+        },
+        {
+          "provider": "agy",
+          "tier": "deep",
+          "model": "gemini-4-argon-medium",
+          "effort": null,
+          "vendor": "google",
+          "wanted": "top"
+        },
+        {
+          "provider": "claude",
+          "tier": "fast",
+          "model": "sonnet",
+          "effort": null,
+          "vendor": "anthropic",
+          "wanted": "top"
+        },
+        {
+          "provider": "codex",
+          "tier": "fast",
+          "model": "gpt-5.6-terra",
+          "effort": "medium",
+          "vendor": "openai",
+          "wanted": "top"
+        },
+        {
+          "provider": "agy",
+          "tier": "fast",
+          "model": "gemini-3.8-flash-high",
+          "effort": null,
+          "vendor": "google",
+          "wanted": "top"
+        },
+        {
+          "provider": "kiro",
+          "tier": "fast",
+          "model": "claude-sonnet-5.5",
+          "effort": null,
+          "vendor": "anthropic",
+          "wanted": "top"
+        }
+      ]
+    },
+    {
+      "agent": "writer-1",
+      "role": "writer",
+      "cycle": 0,
+      "chain": [
+        {
+          "provider": "claude",
+          "tier": "top",
+          "model": "fable",
+          "effort": "high",
+          "vendor": "anthropic"
+        },
+        {
+          "provider": "agy",
+          "tier": "top",
+          "model": "gemini-4-argon-high",
+          "effort": null,
+          "vendor": "google"
+        },
+        {
+          "provider": "kiro",
+          "tier": "top",
+          "model": "claude-opus-5.5",
+          "effort": null,
+          "vendor": "anthropic"
+        },
+        {
+          "provider": "claude",
+          "tier": "deep",
+          "model": "opus",
+          "effort": null,
+          "vendor": "anthropic",
+          "wanted": "top"
+        },
+        {
+          "provider": "agy",
+          "tier": "deep",
+          "model": "gemini-4-argon-medium",
+          "effort": null,
+          "vendor": "google",
+          "wanted": "top"
+        },
+        {
+          "provider": "claude",
+          "tier": "fast",
+          "model": "sonnet",
+          "effort": null,
+          "vendor": "anthropic",
+          "wanted": "top"
+        },
+        {
+          "provider": "codex",
+          "tier": "fast",
+          "model": "gpt-5.6-terra",
+          "effort": "medium",
+          "vendor": "openai",
+          "wanted": "top"
+        },
+        {
+          "provider": "agy",
+          "tier": "fast",
+          "model": "gemini-3.8-flash-high",
+          "effort": null,
+          "vendor": "google",
+          "wanted": "top"
+        },
+        {
+          "provider": "kiro",
+          "tier": "fast",
+          "model": "claude-sonnet-5.5",
+          "effort": null,
+          "vendor": "anthropic",
+          "wanted": "top"
+        }
+      ]
+    },
+    {
+      "agent": "researcher-5",
+      "role": "researcher",
+      "cycle": 2,
+      "chain": [
+        {
+          "provider": "agy",
+          "tier": "top",
+          "model": "gemini-4-argon-high",
+          "effort": null,
+          "vendor": "google"
+        },
+        {
+          "provider": "claude",
+          "tier": "top",
+          "model": "fable",
+          "effort": "high",
+          "vendor": "anthropic"
+        },
+        {
+          "provider": "kiro",
+          "tier": "top",
+          "model": "claude-opus-5.5",
+          "effort": null,
+          "vendor": "anthropic"
+        },
+        {
+          "provider": "claude",
+          "tier": "deep",
+          "model": "opus",
+          "effort": null,
+          "vendor": "anthropic",
+          "wanted": "top"
+        },
+        {
+          "provider": "agy",
+          "tier": "deep",
+          "model": "gemini-4-argon-medium",
+          "effort": null,
+          "vendor": "google",
+          "wanted": "top"
+        },
+        {
+          "provider": "claude",
+          "tier": "fast",
+          "model": "sonnet",
+          "effort": null,
+          "vendor": "anthropic",
+          "wanted": "top"
+        },
+        {
+          "provider": "codex",
+          "tier": "fast",
+          "model": "gpt-5.6-terra",
+          "effort": "medium",
+          "vendor": "openai",
+          "wanted": "top"
+        },
+        {
+          "provider": "agy",
+          "tier": "fast",
+          "model": "gemini-3.8-flash-high",
+          "effort": null,
+          "vendor": "google",
+          "wanted": "top"
+        },
+        {
+          "provider": "kiro",
+          "tier": "fast",
+          "model": "claude-sonnet-5.5",
+          "effort": null,
+          "vendor": "anthropic",
+          "wanted": "top"
+        }
+      ]
+    },
+    {
+      "agent": "researcher-6",
+      "role": "researcher",
+      "cycle": 2,
+      "chain": [
+        {
+          "provider": "kiro",
+          "tier": "top",
+          "model": "claude-opus-5.5",
+          "effort": null,
+          "vendor": "anthropic"
+        },
+        {
+          "provider": "claude",
+          "tier": "top",
+          "model": "fable",
+          "effort": "high",
+          "vendor": "anthropic"
+        },
+        {
+          "provider": "agy",
+          "tier": "top",
+          "model": "gemini-4-argon-high",
+          "effort": null,
+          "vendor": "google"
+        },
+        {
+          "provider": "claude",
+          "tier": "deep",
+          "model": "opus",
+          "effort": null,
+          "vendor": "anthropic",
+          "wanted": "top"
+        },
+        {
+          "provider": "agy",
+          "tier": "deep",
+          "model": "gemini-4-argon-medium",
+          "effort": null,
+          "vendor": "google",
+          "wanted": "top"
+        },
+        {
+          "provider": "claude",
+          "tier": "fast",
+          "model": "sonnet",
+          "effort": null,
+          "vendor": "anthropic",
+          "wanted": "top"
+        },
+        {
+          "provider": "codex",
+          "tier": "fast",
+          "model": "gpt-5.6-terra",
+          "effort": "medium",
+          "vendor": "openai",
+          "wanted": "top"
+        },
+        {
+          "provider": "agy",
+          "tier": "fast",
+          "model": "gemini-3.8-flash-high",
+          "effort": null,
+          "vendor": "google",
+          "wanted": "top"
+        },
+        {
+          "provider": "kiro",
+          "tier": "fast",
+          "model": "claude-sonnet-5.5",
+          "effort": null,
+          "vendor": "anthropic",
+          "wanted": "top"
+        }
+      ]
+    },
+    {
+      "agent": "reviewer-2",
+      "role": "reviewer",
+      "cycle": 2,
+      "chain": [
+        {
+          "provider": "claude",
+          "tier": "top",
+          "model": "fable",
+          "effort": "high",
+          "vendor": "anthropic"
+        },
+        {
+          "provider": "agy",
+          "tier": "top",
+          "model": "gemini-4-argon-high",
+          "effort": null,
+          "vendor": "google"
+        },
+        {
+          "provider": "kiro",
+          "tier": "top",
+          "model": "claude-opus-5.5",
+          "effort": null,
+          "vendor": "anthropic"
+        },
+        {
+          "provider": "claude",
+          "tier": "deep",
+          "model": "opus",
+          "effort": null,
+          "vendor": "anthropic",
+          "wanted": "top"
+        },
+        {
+          "provider": "agy",
+          "tier": "deep",
+          "model": "gemini-4-argon-medium",
+          "effort": null,
+          "vendor": "google",
+          "wanted": "top"
+        },
+        {
+          "provider": "claude",
+          "tier": "fast",
+          "model": "sonnet",
+          "effort": null,
+          "vendor": "anthropic",
+          "wanted": "top"
+        },
+        {
+          "provider": "codex",
+          "tier": "fast",
+          "model": "gpt-5.6-terra",
+          "effort": "medium",
+          "vendor": "openai",
+          "wanted": "top"
+        },
+        {
+          "provider": "agy",
+          "tier": "fast",
+          "model": "gemini-3.8-flash-high",
+          "effort": null,
+          "vendor": "google",
+          "wanted": "top"
+        },
+        {
+          "provider": "kiro",
+          "tier": "fast",
+          "model": "claude-sonnet-5.5",
+          "effort": null,
+          "vendor": "anthropic",
+          "wanted": "top"
+        }
+      ]
+    }
+  ],
+  "created": "2026-11-13T14:08:17+03:00"
+}
