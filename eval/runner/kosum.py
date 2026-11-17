@@ -128,6 +128,18 @@ def kb_hashleri(kayit: pathlib.Path) -> dict:
         return {}
 
 
+def hash_listesi_yaz(dizin: pathlib.Path, sonuclar: pathlib.Path) -> pathlib.Path:
+    """Ham koşum klasörünün dosya hash listesini `eval/results/<koşum>.sha256` olarak yazar (protokol §7.5).
+
+    Hakem çıktıları aynı klasöre eklendiğinde yeniden çağrılır; liste git'e girer.
+    """
+    satirlar = [f"{sha256_dosya(p)}  {p.name}" for p in sorted(dizin.iterdir())
+                if p.is_file() and not p.name.endswith(".tmp")]
+    yol = sonuclar / f"{dizin.name}.sha256"
+    yol.write_text("\n".join(satirlar) + "\n", encoding="utf-8")
+    return yol
+
+
 def _json_yaz(yol: pathlib.Path, nesne) -> None:
     gecici = yol.with_name(yol.name + ".tmp")
     gecici.write_text(json.dumps(nesne, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
@@ -322,10 +334,8 @@ def kos(konfig_yollari, bolme: str | None = None, setler: list | None = None, ur
             ks.manifest["tamamlandi"] = tamam
             _json_yaz(ks.dizin / "manifest.json", ks.manifest)
 
-    sonuclar = depo / "eval" / "results"
     for ks in kosumlar:
-        satirlar = [f"{sha256_dosya(p)}  {p.name}" for p in sorted(ks.dizin.iterdir()) if p.is_file()]
-        (sonuclar / f"{ks.manifest['kosum_kimligi']}.sha256").write_text("\n".join(satirlar) + "\n", encoding="utf-8")
+        hash_listesi_yaz(ks.dizin, depo / "eval" / "results")
         s = ks.manifest["sayilar"]
         yaz(f"ÖZET {ks.manifest['kosum_kimligi']}: {s['yanit']} yanıt, {s['hata']} hata, "
             f"{s['ret']} ret, {s['kesilme']} kesilme")
